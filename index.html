@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img style="padding-left: 10px; height:50px;width:50px" src="./src/HomeIcon.png">
+            <ol class="nav-bar-links">
+                <img id="SkillsBtn" class="link-image" src="src/Shift.png">
+                <img id="ProjectsBtn" class="link-image" src="src/Projects.png">
+                <img id="AboutBtn" class="link-image" src="src/About.png">
+                <img id="ContactBtn" class="link-image" src="src/Contact.png">
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Home">
+            <div>
+                <h2>Kyle Arvin</h2>
+            </div>
+            <div>
+                <h3>Software Engineer</h3>
+            </div>
+        </section>
+
+        <section id="Skills">
+            <div class="title">
+                <div class="title-text">Skills</div>
+                <!--Add a search tool that searches through projects based on skills used-->
+            </div>
+            <div class="skills-row">
+                <div class="skills-box">
+                    <div class="skills-box-header">
+                        <h2>Front-End</h2>
+                    </div>
+                    <div class="skills-box-list">
+                        <ul class="skills-list">
+                            <li>
+                                <img class="skillslogo" src="./src/html5.svg" alt="Kiwi standing on oval">
+                                <p>HTML</p>
+                            </li>
+                            <li><img class="skillslogo" src="./src/css3.svg" alt="Kiwi standing on oval">
+                                <p>CSS</p>
+                            </li>
+                            <li><img class="skillslogo" src="./src/react.svg" alt="Kiwi standing on oval">
+                                <p>React</p>
+                            </li>
+                            <li><img class="skillslogo" src="./src/vue.svg" alt="Kiwi standing on oval">
+                                <p>Vue</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-box-header">
+                        <h2>Back-End</h2>
+                    </div>
+                    <div class="skills-box-list">
+                        <ul class="skills-list">
+                            <li><img class="skillslogo" src="./src/node.svg" alt="Kiwi standing on oval">
+                                <p>Node</p>
+                            </li>
+                            <li><img class="skillslogo" src="./src/express-logo.svg" alt="Kiwi standing on oval">
+                                <p>Express</p>
+                            </li>
+                            <li><img class="skillslogo" src="./src/sequelizejs-icon.svg" alt="Kiwi standing on oval">
+                                <p>Sequelize</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-box-header">
+                        <h2>Languages</h2>
+                    </div>
+                    <div class="skills-box-list">
+                        <ul class="skills-list">
+                            <li><img class="skillslogo" src="./src/python.svg" alt="Kiwi standing on oval">
+                                <p>Python</p>
+                            </li>
+                            <li><img class="skillslogo" src="./src/javascript.svg" alt="Kiwi standing on oval">
+                                <p>JavaScript</p>
+                            </li>
+                            <li><img class="skillslogo" src="./src/Go.svg" alt="Kiwi standing on oval">
+                                <p>Go</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>"
+        </section>
+
+        <section id="Projects">
+            <div class="title">
+                <div class="title-text">Projects</div>
+                <!--Add a search tool that searches through projects based on skills used-->
+            </div>
+            <div class="grid">
+                <div class="maincontainer">
+
+                    <div class="thecard">
+
+                        <div class="thefront">
+                            <h1>JavaScript Cat Trap</h1>
+                            <p>A version of the popular online game Trap the Cat made entirely through JavaScript using BFS and pathfinding</p>
+                            <img class="skillslogo" src="./src/javascript.svg">
+                        </div>
+
+                        <div class="theback">
+                            <h1>Back of Card</h1>
+                            <p>Your use of this site is subject to the terms and conditions governing this and all
+                                transactions.</p>
+                            <a href="https://karvincode.github.io/cattrapgame/">
+                                <button>Live Version</button>
+                            </a>
+                            <a href="https://github.com/karvincode/cattrapgame">
+                                <button>Source Code</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="maincontainer">
+
+                    <div class="thecard">
+
+                        <div class="thefront">
+                            <h1>VFL Host</h1>
+                            <p>FullStack website made with Vue, Node, and SQL in order to allow individuals to create
+                                customizable fantasy leagues for the video game Valorant</p>
+                            <div class = "imgLanguages">
+                                <img class="skillslogo" src="./src/vue.svg">
+                                <img class="skillslogo" src="./src/node.svg">
+                                <img class="skillslogo" src="./src/sequelizejs-icon.svg">
+                            </div>
+                        </div>
+
+                        <div class="theback">
+                            <h1>Back of Card</h1>
+                            <p>Your use of this site is subject to the terms and conditions governing this and all
+                                transactions.</p>
+                            <button>Live Version</button>
+                            <button>Source Code</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="maincontainer">
+
+                    <div class="thecard">
+
+                        <div class="thefront">
+                            <h1>Online Shop Case Study</h1>
+                            <p>This is the front of the card. It contains important information. Please see overleaf for
+                                more details.</p>
+                                <div class = "imgLanguages">
+                                    <img class="skillslogo" src="./src/react.svg">
+                                    <img class="skillslogo" src="./src/node.svg">
+                                    <img class="skillslogo" src="./src/sequelizejs-icon.svg">
+                                </div>
+                        </div>
+
+                        <div class="theback">
+                            <h1>Back of Card</h1>
+                            <p>Your use of this site is subject to the terms and conditions governing this and all
+                                transactions.</p>
+                            <button>Live Version</button>
+                            <a href="https://github.com/karvincode/Online-Shop">
+                                <button>SourceCode</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="maincontainer">
+
+                    <div class="thecard">
+
+                        <div class="thefront">
+                            <h1>Local Business Case Study</h1>
+                            <p>Website made with react to simulate the creation of a local little league.</p>
+                        </div>
+
+                        <div class="theback">
+                            <h1>Back of Card</h1>
+                            <p>Your use of this site is subject to the terms and conditions governing this and all
+                                transactions.</p>
+                            <button>Live Version</button>
+                            <button>SourceCode</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="About">
+            <div class="title">
+                <div class="title-text">About Me</div>
+                <!--Add a search tool that searches through projects based on skills used-->
+            </div>
+            <div class="about-content">
+                <div class="content-box">
+                    <div class="about-p">
+                        <p>
+                            I am a self-taught coder and have been learning a variety of different languages with the goal of applying said knowledge into personal projects.
+                            The thing I enjoy the most about coding is building knowledge and solving problems at a quicker rate. 
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <div class="container">
+                <div class="fcf-body">
+
+                    <div id="fcf-form">
+                        <h3 class="fcf-h3">Contact Me</h3>
+
+                        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+                            <div class="fcf-form-group">
+                                <label for="Name" class="fcf-label">Your name</label>
+                                <div class="fcf-input-group">
+                                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <label for="Email" class="fcf-label">Your email address</label>
+                                <div class="fcf-input-group">
+                                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <label for="Message" class="fcf-label">Your message</label>
+                                <div class="fcf-input-group">
+                                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6"
+                                        maxlength="3000" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <button type="submit" id="fcf-button"
+                                    class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+            <div class="link-contacts">
+                <ul class="link-list-contacts">
+                    <li><a href="#Home"><img class="skillslogo" src="./src/github-mark.svg"></a></li>
+                    <li><a href="#Home"><img class="skillslogo" src="./src/linkedin.svg"></a></li>
+                    <li></li>
+                </ul>
+            </div>
+                    <!-- Back to top button -->
+                    <!-- <li class="nav-bar-li"><button id="HomeBtn">Home</button></li> -->
+        </section>
+
+        <!-- javascript -->
+        <script src="app.js"></script>
+    </main>
+</body>
+
+</html>

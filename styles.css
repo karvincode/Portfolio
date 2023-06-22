@@ -1,0 +1,507 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    background-color: #f9f4ef;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+a {
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    background-color: #8c7851;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    padding: 10px;
+    background-color: #8c7851;
+}
+p{
+    line-height: 1.5;
+}
+
+header {
+    background-color: #f9f4ef;
+    height: 120px;
+    width: 100%;
+
+
+}
+
+nav {
+    background-color: #f0e7dd;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    /* Make it stick/fixed */
+    top: 0px;
+    /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    /* Full width */
+    height: 120px;
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+}
+
+.link-image{
+    display: inline-block;
+  width: 60px;
+  height: 40px;
+}
+
+.nav-bar-links {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 10px;
+    margin: 0px;
+    list-style: none;
+}
+
+.nav-bar-li {
+    margin: 0px 5px;
+    font-size: 16px;
+    align-items: center;
+    background-color: #8c7851;
+    height: 100%;
+    display: inline-block;
+    color: #fffffe;
+    transition: all 1s;
+
+}
+
+.skillslogo {
+    height: 35px;
+    width: 35px;
+
+}
+
+body {
+    background-color: #f9f4ef;
+    color: #716040;
+    width: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS';
+
+}
+
+.home-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 100px;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30vh;
+    justify-content: space-between;
+
+}
+
+.skills-box {
+    justify-content: space-around;
+    padding: 10px;
+    height: 30%;
+    width: 33%;
+}
+
+.skills-box-list {
+    text-align: center;
+}
+
+.skills-box-header {
+    text-align: center;
+}
+
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.skills-list li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.skills-list li img {
+    width: 35px;
+    height: 35px;
+}
+
+.title {
+    align-items: center;
+    height: 10vh;
+}
+
+.title-text {
+    color: #020826;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: 40%;
+
+}
+
+.grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 10px;
+    justify-items: center;
+}
+
+.maincontainer {
+    width: 100%;
+    height:100%;
+    max-width: 300px;
+    min-width:150px;
+    height: 320px;
+    background: none;
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #eaddcf;
+    color: #716040;
+}
+.imgLanguages{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #eaddcf;
+    color: #716040;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1,
+.theback h1 {
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #020826;
+}
+
+.thefront p,
+.theback p {
+    padding: 20px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.theback button {
+    color: #020826;
+}
+
+/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.card-title {
+    display: flex;
+}
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 100px;
+}
+
+#Skills {
+    background-color: #f0e7dd;
+}
+
+#Projects {
+    background-color: #fffffe;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.content-box {
+    padding: 5px;
+    width: 50%;
+}
+
+.resume {
+    height: 800px;
+    width: 400px
+}
+
+#Contact {
+    background-color: #8c7851;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+#fcf-form {
+    display: block;
+}
+
+.fcf-body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #8c7851;
+    padding: 30px;
+    padding-bottom: 10px;
+    max-width: 100%;
+}
+
+.fcf-h3 {
+    color: #fffffe;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #020826;
+    background-color: #eaddcf;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size],
+select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #545b62;
+}
+
+.fcf-credit a {
+    color: #545b62;
+    text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus,
+.fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus,
+.fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg,
+.fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block,
+input[type="reset"].fcf-btn-block,
+input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+.action_page.php {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #fffffe;
+}
+.contact-form{
+    display: flex;
+}
+.link-contacts{
+margin-top: 25vh;
+
+}
+
+.link-list-contacts{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}

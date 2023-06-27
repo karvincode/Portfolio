@@ -290,7 +290,9 @@ body {
     justify-content: space-around;
 
 }
-
+.about-p{
+    text-align: center;
+}
 .content-box {
     padding: 5px;
     width: 50%;
